@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import BrandBar from "./components/BrandBar";
 import Tabs from "./components/Tabs";
 import ManualInput from "./components/ManualInput";
 import MetricCard from "./components/MetricCard";
@@ -134,6 +135,7 @@ export default function App() {
   return (
     <main className="min-h-screen bg-slate-950 px-4 py-6 text-slate-100 md:px-8">
       <div className="mx-auto max-w-7xl space-y-6">
+        <BrandBar />
         <Header />
 
         <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
